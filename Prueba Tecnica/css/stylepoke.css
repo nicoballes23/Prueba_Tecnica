@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/269/183/desktop-wallpaper-rotom-pokedex-backgrounds-pokedex.jpg");
+  background-size: contain;
+  background-position: center;
+  
+}
+
+/* Modifica el h1 del pokedex*/
+h1 {
+  color: azure;
+  text-align: center;
+
+
+}
+
+button {
+  background-image: url("https://i.ytimg.com/vi/l-wPToTDIHI/maxresdefault.jpg");
+  background-size: contain;
+  width: 400px;
+  height: 50px;
+  background-color: rgb(0, 0, 0) ;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+/* Cambia el color de fondo de los botones al pasar por encima */
+button:hover {
+  background-color: #E8C39E;
+  
+}
+
+#pokemonList {
+  text-align: center; 
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+#pokemonData {
+
+  background-image: url("data:image/jpeg;base64,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");
+  background-size: contain;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 200px;
+  margin-left: 550px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
+  
+}
+
+/* Establece el color del texto para los encabezados h2 dentro de "pokemonData" */  
+#pokemonData h2 {
+  color: #e73843;
+  
+}
+
+#pokemonData img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2px;
+  
+}
+
+#pokemonData h3 {
+  color: #e73843;
+  margin-bottom: 10px;
+}
+
+#pokemonData ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#pokemonData li {
+  margin-bottom: 5px;
+}
+
+
+.back-button {
+  display: block;
+  width: 140px;
+  height: 40px;
+  background-color: #0c0001;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  text-decoration: none;
+  line-height: 30px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Color de fondo del botón*/
+.back-button:hover {
+  background-color: #E8C39E;
+  
+}
+
+/*Se le da foma a los recuadros*/
+.pokemon-type {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 5px;
+  border-radius: 7px;
+}
+
